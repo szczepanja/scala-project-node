@@ -8,7 +8,7 @@ case class Node(children: String) {
   def display(n: Int): Unit = {
     val child = children
 
-    println(" " * 4 * n + "+- " + child)
+    println(" " * 2 * n + "+- " + child)
     kids.foreach(_.display(n + 1))
   }
 }
