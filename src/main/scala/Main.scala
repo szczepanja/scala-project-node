@@ -4,6 +4,7 @@ object Main extends App {
   val kid1 = Node("Union")
   val kid2 = Node("HashAggregate_1")
   val kid3 = Node("HashAggregate_2")
+  val grandKids = kid1.addChildren(Node("Exchange"))
 
   parent.addChildren(kid1)
   parent.addChildren(kid2)
